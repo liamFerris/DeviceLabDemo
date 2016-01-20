@@ -34,8 +34,8 @@ public class DriverSetup {
 	        capabilities.setCapability("launchTimeout", "12000");
 	        driver = new IOSDriver(SELENIUM_HUB_URL, capabilities);
 		}
-        driver.manage().timeouts().pageLoadTimeout(20L, TimeUnit.SECONDS);
-        driver.manage().timeouts().implicitlyWait(20L, TimeUnit.SECONDS);
+        driver.manage().timeouts().pageLoadTimeout(60L, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(60L, TimeUnit.SECONDS);
         return driver;        
 	}
 }
